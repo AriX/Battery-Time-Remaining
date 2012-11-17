@@ -237,7 +237,7 @@ static void PowerSourceChanged(void *context)
                 // Not charging and on a endless powersource
                 [self setStatusBarImage:[self getBatteryIconNamed:@"BatteryCharged"] title:@""];
                 
-                /*NSNumber *currentBatteryCapacity = CFDictionaryGetValue(description, CFSTR(kIOPSCurrentCapacityKey));
+                NSNumber *currentBatteryCapacity = CFDictionaryGetValue(description, CFSTR(kIOPSCurrentCapacityKey));
                 NSNumber *maxBatteryCapacity = CFDictionaryGetValue(description, CFSTR(kIOPSMaxCapacityKey));
                 
                 // Notify user when battery is charged
@@ -248,7 +248,7 @@ static void PowerSourceChanged(void *context)
                     
                     [self notify:NSLocalizedString(@"Charged", @"Charged notification")];
                     self.previousPercent = self.currentPercent;
-                }*/
+                }
             }
             
         }
