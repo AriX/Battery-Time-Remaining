@@ -73,7 +73,7 @@ static void PowerSourceChanged(void *context)
     [psPercentMenu setTag:kBTRMenuPowerSourcePercent];
     [psPercentMenu setEnabled:NO];
     
-    NSMenuItem *psStateMenu = [[NSMenuItem alloc] initWithTitle:[NSString stringWithFormat:NSLocalizedString(@"Power source: %@", @"Powersource menuitem"), NSLocalizedString(@"Unknown", @"Powersource state")] action:nil keyEquivalent:@""];
+    NSMenuItem *psStateMenu = [[NSMenuItem alloc] initWithTitle:[NSString stringWithFormat:NSLocalizedString(@"Power Source: %@", @"Powersource menuitem"), NSLocalizedString(@"Unknown", @"Powersource state")] action:nil keyEquivalent:@""];
     [psStateMenu setTag:kBTRMenuPowerSourceState];
     [psStateMenu setEnabled:NO];
     
@@ -198,7 +198,7 @@ static void PowerSourceChanged(void *context)
         NSLocalizedString(@"Power Adapter", @"Powersource state") :
         NSLocalizedString(@"Off Line", @"Powersource state");
         
-        [self.menu itemWithTag:kBTRMenuPowerSourceState].title = [NSString stringWithFormat:NSLocalizedString(@"Power source: %@", @"Powersource menuitem"), psStateTranslated];
+        [self.menu itemWithTag:kBTRMenuPowerSourceState].title = [NSString stringWithFormat:NSLocalizedString(@"Power Source: %@", @"Powersource menuitem"), psStateTranslated];
         
         // Still calculating the estimated time remaining...
         // Fixes #22 - state after reboot
