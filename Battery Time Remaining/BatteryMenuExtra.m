@@ -204,7 +204,7 @@ static void PowerSourceChanged(void *context)
         // Fixes #22 - state after reboot
         if ([psState isEqualToString:(NSString *)CFSTR(kIOPSBatteryPowerValue)] && CFDictionaryGetValue(description, CFSTR(kIOPSIsChargingKey)) == kCFBooleanFalse && (kIOPSTimeRemainingUnknown == timeRemaining || kIOPSTimeRemainingUnlimited == timeRemaining))
         {
-            [self setStatusBarImage:[self getBatteryIconPercent:self.currentPercent] title:[NSString stringWithFormat:@" %@", NSLocalizedString(@"Calculating…", @"Calculating sidetext")]];
+            [self setStatusBarImage:[self getBatteryIconPercent:self.currentPercent] title:[NSString stringWithFormat:@" %@", NSLocalizedString(@"(Calculating…)", @"Calculating sidetext")]];
         }
         // We're connected to an unlimited power source (AC adapter probably)
         else if (kIOPSTimeRemainingUnlimited == timeRemaining)
@@ -228,7 +228,7 @@ static void PowerSourceChanged(void *context)
                 }
                 else
                 {
-                    [self setStatusBarImage:[self getBatteryIconNamed:@"BatteryCharging"] title:[NSString stringWithFormat:@" %@", NSLocalizedString(@"Calculating…", @"Calculating sidetext")]];
+                    [self setStatusBarImage:[self getBatteryIconNamed:@"BatteryCharging"] title:[NSString stringWithFormat:@" %@", NSLocalizedString(@"(Calculating…)", @"Calculating sidetext")]];
                 }
             }
             else
