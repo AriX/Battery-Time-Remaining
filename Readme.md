@@ -1,18 +1,18 @@
 Battery Time Remaining
 ======================
 
-Show the estimated battery time remaining on top of your screen in Mac OS X 10.8 Mountain Lion. This version, a fork of the original, is implemented as an NSMenuExtra, so that if you hold down the command key and drag it, you can re-arrange it in your menu bar, just like Apple's original implementation.
+Battery Time Remaining shows your battery's estimated time at the top of your screen in OS X 10.8 Mountain Lion. This version, a fork of the original, is implemented as an NSMenuExtra, so you can re-arrange it in the menu bar by holding the command key and dragging, just like Apple's original implementation.
 
-This version does not intend to replace the original, as it is not App Store-safe. It is just for those who would like to be able to re-arrange the icon to their hearts' content!
+This version does not intend to replace the original Battery Time Remaining, as it is not App Store-safe. This is just for those who would like to be able to re-arrange the status item to their hearts' content!
 
-This version also has slightly different strings to more closely match Apple's implementation. I think I broke the localization; if the NSMenuExtra doesn't show up in your language, let me know.
+This version also has slightly different strings to more closely match Apple's version. I may have broken the localization; if the menu extra doesn't show up in your language, let me know.
 
 ![Normal mode](https://raw.github.com/AriX/Battery-Time-Remaining/master/preview.png)
 
 Why does this project exist?
 -----------------------------
 
-Apple removed the option to show the battery time remaining in the statusbar since the Mountain Lion release. This menu extra restores this functionality.
+Apple removed the option to show the remaining battery time in the menu bar since the release of Mountain Lion. This project restores the functionality.
 
 How do I install it?
 --------------------
