@@ -1,38 +1,50 @@
 Battery Time Remaining
 ======================
 
-Show the estimated battery time remaining on top of your screen in Mac OS X 10.8 Mountain Lion. This version, a fork of the original, is implemented as an NSMenuExtra, so that if you hold down the command key and drag it, you can re-arrange it in your menu bar, just like Apple's original implementation.
-
-This version does not intend to replace the original, as it is not App Store-safe. It is just for those who would like to be able to re-arrange the icon to their hearts' content!
-
-This version also has slightly different strings to more closely match Apple's implementation. I think I broke the localization; if the NSMenuExtra doesn't show up in your language, let me know.
+Show the estimated battery time remaining on top of your screen in Mac OS X 10.8 Mountain Lion.
 
 ![Normal mode](https://raw.github.com/codler/Battery-Time-Remaining/master/preview.png)
+![Advanced mode](https://raw.github.com/codler/Battery-Time-Remaining/master/preview_advanced.png)
 
 Why does this project exist?
 -----------------------------
 
-Apple removed the option to show the battery time remaining in the statusbar since the Mountain Lion release. This menu extra restores this functionality.
+Apple removed the option to show the battery time remaining in the statusbar since the Mountain Lion release. This App will do exactly that, show the battery time remaining on top of your screen.
 
 How do I install it?
 --------------------
 
 Two options:
 
-- Download [latest version](https://github.com/AriX/Battery-Time-Remaining/downloads), unzip and follow the instructions
-- Download the source here from GitHub and compile it with Xcode
+- Download [latest version](https://github.com/codler/Battery-Time-Remaining/downloads), unzip and run the App
+- Download the source here from Github and compile it with XCode
 
-Who made this app?
+Is it accurate?
+---------------
+
+The App shows the exact same time as you will see when you click the battery icon. The time is provided by Mac OS X itself and as accurate as you can get.
+
+How do I contribute?
+--------------------
+
+Fork this project, make some changes and submit a pull request. Check the issues tab for inspiration on what to fix. Please make sure your fork is the latest development version!
+
+If you find any issues or have a feature request please contribute by submitting an issue here on Github!
+
+If you would like to donate:
+
+[![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=CSPZ2AF2ZX72Q&lc=SE&item_name=Battery%20Time%20Remaining&item_number=Battery%20Time%20Remaining&currency_code=SEK&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
+
+Who did make this app?
 ----------------------
 
 * [codler](https://github.com/codler) / Han Lin Yap: created the [first version](https://github.com/codler/Battery-Time-Remaining) of the app
 * [mac-cain13](https://github.com/mac-cain13) / Mathijs Kadijk: made some improvements
-* [AriX](https://github.com/AriX) / Ari Weinstein: Re-implemented as NSMenuExtra
+
+App icon provided by happytel.com free calling for all.
 
 Change log
 ----------
-
-2012-11-17 - **NSMenuExtra fork v1.0**
 
 2012-11-01 - **v1.6.1** - [diff](https://github.com/codler/Battery-Time-Remaining/compare/v1.6...v1.6.1)
 

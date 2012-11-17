@@ -3,51 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>icon</string>
+	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.codler.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.squishsoftware.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
-	<string>APPL</string>
+	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.6.1</string>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.codler.${PRODUCT_NAME:rfc1034identifier}</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.codler.Battery-Time-Remaining</string>
-			</array>
-		</dict>
-	</array>
+	<string>SQSH</string>
 	<key>CFBundleVersion</key>
-	<string>12</string>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.utilities</string>
-	<key>LSHasLocalizedDisplayName</key>
-	<true/>
-	<key>LSMinimumSystemVersion</key>
-	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
-	<key>LSUIElement</key>
-	<true/>
+	<string>1</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2012 Han Lin Yap and Wrep. All rights reserved.</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>Copyright © 2012 Squish Software. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
+	<string>BatteryMenuExtra</string>
 </dict>
 </plist>

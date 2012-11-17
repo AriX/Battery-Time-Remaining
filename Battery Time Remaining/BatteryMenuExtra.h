@@ -1,12 +1,5 @@
-//
-//  AppDelegate.h
-//  Battery Time Remaining
-//
-//  Created by Han Lin Yap on 2012-08-01.
-//  Copyright (c) 2012 Han Lin Yap. All rights reserved.
-//
-
 #import <Cocoa/Cocoa.h>
+#import "SystemUIPlugin.h"
 
 #ifndef _BTR_MENU
 #define _BTR_MENU
@@ -25,16 +18,19 @@
 
 #endif
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate, NSMenuDelegate>
+@class BatteryMenuExtraView;
 
-- (void)updateStatusItem;
-- (NSImage *)getBatteryIconNamed:(NSString *)iconName;
-- (NSImage *)getBatteryIconPercent:(NSInteger)percent;
+@interface BatteryMenuExtra : NSMenuExtra <NSMenuDelegate, NSUserNotificationCenterDelegate> {
+    BatteryMenuExtraView *extraView;
+}
 
-@property (strong) NSStatusItem *statusItem;
 @property (nonatomic) NSInteger previousPercent;
 @property (nonatomic) NSInteger currentPercent;
 @property (strong) NSMutableDictionary *notifications;
 @property (nonatomic) bool advancedSupported;
+
+- (void)updateStatusItem;
+- (NSImage *)getBatteryIconNamed:(NSString *)iconName;
+- (NSImage *)getBatteryIconPercent:(NSInteger)percent;
 
 @end
