@@ -107,7 +107,7 @@ static void PowerSourceChanged(void *context)
     [notificationMenu setHidden:self.advancedSupported && ![[NSUserDefaults standardUserDefaults] boolForKey:@"advanced"]];
     
     // Advanced mode menu item
-    NSMenuItem *advancedSubmenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Advanced mode", @"Advanced mode setting") action:@selector(toggleAdvanced:) keyEquivalent:@""];
+    /*NSMenuItem *advancedSubmenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Advanced mode", @"Advanced mode setting") action:@selector(toggleAdvanced:) keyEquivalent:@""];
     [advancedSubmenuItem setTag:kBTRMenuAdvanced];
     advancedSubmenuItem.target = self;
     advancedSubmenuItem.state = ([[NSUserDefaults standardUserDefaults] boolForKey:@"advanced"]) ? NSOnState : NSOffState;
@@ -128,7 +128,8 @@ static void PowerSourceChanged(void *context)
     // Settings menu item
     NSMenuItem *settingMenu = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Settings", @"Settings menuitem") action:nil keyEquivalent:@""];
     [settingMenu setTag:kBTRMenuSetting];
-    [settingMenu setSubmenu:settingSubmenu];
+    [settingMenu setSubmenu:settingSubmenu];*/
+    showParenthesis = YES;
     
     // Build the statusbar menu
     NSMenu *statusBarMenu = [[NSMenu alloc] initWithTitle:@"Status Menu"];
@@ -137,10 +138,10 @@ static void PowerSourceChanged(void *context)
     [statusBarMenu addItem:psPercentMenu];
     [statusBarMenu addItem:psStateMenu];
     [statusBarMenu addItem:psAdvancedMenu];
-    [statusBarMenu addItem:[NSMenuItem separatorItem]]; // Separator
+    //[statusBarMenu addItem:[NSMenuItem separatorItem]]; // Separator
     
-    [statusBarMenu addItem:notificationMenu];
-    [statusBarMenu addItem:settingMenu];
+    //[statusBarMenu addItem:notificationMenu];
+    //[statusBarMenu addItem:settingMenu];
     [statusBarMenu addItem:[NSMenuItem separatorItem]]; // Separator
     
     NSMenuItem *energySaverItem = [statusBarMenu addItemWithTitle:NSLocalizedString(@"Open Energy Saver Preferences…", @"Open Energy Saver Preferences menuitem") action:@selector(openEnergySaverPreference:) keyEquivalent:@""];
