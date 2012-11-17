@@ -143,7 +143,8 @@ static void PowerSourceChanged(void *context)
     [statusBarMenu addItem:settingMenu];
     [statusBarMenu addItem:[NSMenuItem separatorItem]]; // Separator
     
-    [statusBarMenu addItemWithTitle:NSLocalizedString(@"Energy Saver Preferences…", @"Open Energy Saver Preferences menuitem") action:@selector(openEnergySaverPreference:) keyEquivalent:@""];
+    NSMenuItem *energySaverItem = [statusBarMenu addItemWithTitle:NSLocalizedString(@"Open Energy Saver Preferences…", @"Open Energy Saver Preferences menuitem") action:@selector(openEnergySaverPreference:) keyEquivalent:@""];
+    energySaverItem.target = self;
     [statusBarMenu addItem:[NSMenuItem separatorItem]]; // Separator
     
     [statusBarMenu addItemWithTitle:NSLocalizedString(@"Quit", @"Quit menuitem") action:@selector(terminate:) keyEquivalent:@""];
