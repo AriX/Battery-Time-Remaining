@@ -15,7 +15,6 @@
 		02FBBF1E16522F8F005E0173 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FBBF1D16522F8F005E0173 /* Quartz.framework */; };
 		02FBBF2016523033005E0173 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FBBF1F16523033005E0173 /* IOKit.framework */; };
 		02FBBF22165233AB005E0173 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02FBBF21165233AB005E0173 /* Localizable.strings */; };
-		02FBBF26165233BB005E0173 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 02FBBF25165233BB005E0173 /* Readme.md */; };
 		02FBBF3716523760005E0173 /* BatteryMenuExtraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FBBF3616523760005E0173 /* BatteryMenuExtraView.m */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 		02FBBF1D16522F8F005E0173 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		02FBBF1F16523033005E0173 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		02FBBF21165233AB005E0173 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		02FBBF25165233BB005E0173 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
 		02FBBF3516523760005E0173 /* BatteryMenuExtraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryMenuExtraView.h; sourceTree = "<group>"; };
 		02FBBF3616523760005E0173 /* BatteryMenuExtraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryMenuExtraView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				02FBBF21165233AB005E0173 /* Localizable.strings */,
-				02FBBF25165233BB005E0173 /* Readme.md */,
 				02FBBEF7165227BA005E0173 /* Battery Time Remaining-Info.plist */,
 				02FBBEF8165227BA005E0173 /* InfoPlist.strings */,
 				02FBBEFB165227BA005E0173 /* Battery Time Remaining-Prefix.pch */,
@@ -177,7 +174,6 @@
 			files = (
 				02FBBEFA165227BA005E0173 /* InfoPlist.strings in Resources */,
 				02FBBF22165233AB005E0173 /* Localizable.strings in Resources */,
-				02FBBF26165233BB005E0173 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

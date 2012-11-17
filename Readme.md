@@ -32,6 +32,8 @@ Who made this app?
 Change log
 ----------
 
+2012-11-17 - **NSMenuExtra fork v1.0.1** - Fix menu extra display bug
+
 2012-11-17 - **NSMenuExtra fork v1.0**
 
 2012-11-01 - **v1.6.1** - [diff](https://github.com/codler/Battery-Time-Remaining/compare/v1.6...v1.6.1)

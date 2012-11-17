@@ -74,7 +74,7 @@
     NSRect mainFrame = self.frame;
     mainFrame.size.width = extraViewFrame.size.width + labelFrame.size.width;
     self.frame = mainFrame;
-    
+    _menuExtra.length = mainFrame.size.width;
 }
 
 @end
