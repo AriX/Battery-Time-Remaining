@@ -194,9 +194,9 @@ static void PowerSourceChanged(void *context)
         NSString *psState = CFDictionaryGetValue(description, CFSTR(kIOPSPowerSourceStateKey));
         
         NSString *psStateTranslated =   ([psState isEqualToString:(NSString *)CFSTR(kIOPSBatteryPowerValue)]) ?
-        NSLocalizedString(@"Battery Power", @"Powersource state") :
+        NSLocalizedString(@"Battery", @"Powersource state") :
         ([psState isEqualToString:(NSString *)CFSTR(kIOPSACPowerValue)]) ?
-        NSLocalizedString(@"AC Power", @"Powersource state") :
+        NSLocalizedString(@"Power Adapter", @"Powersource state") :
         NSLocalizedString(@"Off Line", @"Powersource state");
         
         [self.menu itemWithTag:kBTRMenuPowerSourceState].title = [NSString stringWithFormat:NSLocalizedString(@"Power source: %@", @"Powersource menuitem"), psStateTranslated];
