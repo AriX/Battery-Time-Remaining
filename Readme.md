@@ -7,7 +7,7 @@ This version does not intend to replace the original, as it is not App Store-saf
 
 This version also has slightly different strings to more closely match Apple's implementation. I think I broke the localization; if the NSMenuExtra doesn't show up in your language, let me know.
 
-![Normal mode](https://raw.github.com/codler/Battery-Time-Remaining/master/preview.png)
+![Normal mode](https://raw.github.com/AriX/Battery-Time-Remaining/master/preview.png)
 
 Why does this project exist?
 -----------------------------
